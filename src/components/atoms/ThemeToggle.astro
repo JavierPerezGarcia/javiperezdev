@@ -1,0 +1,40 @@
+---
+import { Icon } from "astro-icon/components";
+---
+
+<button id="theme-toggle" class="mx-5 cursor-pointer">
+    <Icon name="solar:sun-bold" class="text-3xl" id="sun"></Icon>
+    <Icon name="solar:moon-bold" class="text-3xl" id="moon"></Icon>
+</button>
+
+<style>
+    /* .sun { fill: black; }
+    .moon { fill: transparent; }
+    
+    :global(.dark) .sun { fill: transparent; }
+    :global(.dark) .moon { fill: white; } */
+</style>
+
+<script>
+/* import { toggleTheme } from "../../scripts/toggle-theme"; */
+    import { toggleTheme, applySavedTheme } from "../../scripts/toggle-theme";
+
+    applySavedTheme();
+
+    const button = document.getElementById("theme-toggle");
+    const sunIcon = document.getElementById("sun");
+    const moonIcon = document.getElementById("moon");
+
+    function updateIcons(){
+        const isDark = document.documentElement.classList.contains("dark");
+        sunIcon.classList.toggle("hidden", isDark);
+        moonIcon.classList.toggle("hidden", !isDark);
+    }
+
+    updateIcons();
+
+    button.addEventListener("click", () => {
+        toggleTheme();
+        updateIcons();
+    })
+</script>

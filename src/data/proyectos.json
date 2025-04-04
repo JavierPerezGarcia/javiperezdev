@@ -1,0 +1,23 @@
+[
+    {
+        "title": "Sonomamma",
+        "url": "",
+        "img": "",
+        "description": "Descubre los auténticos sabores de la comida casera japonesa que ofrece la ciudad de Kobe",
+        "techs": ["wordpress", "gutenberg", "yoast SEO"]
+    },
+    {
+        "title": "Pitayapp",
+        "url": "",
+        "img": "",
+        "description": "Descubre los auténticos sabores de la comida casera japonesa que ofrece la ciudad de Kobe",
+        "techs": ["wordpress", "gutenberg", "yoast SEO"]
+    },
+    {
+        "title": "Recipe Mug",
+        "url": "",
+        "img": "",
+        "description": "Descubre los auténticos sabores de la comida casera japonesa que ofrece la ciudad de Kobe",
+        "techs": ["wordpress", "gutenberg", "yoast SEO"]
+    }
+]

@@ -1,0 +1,42 @@
+[
+    {
+        "name": "Astro",
+        "icon": "devicon-plain:astro"
+    },
+    {
+        "name": "HTML5",
+        "icon": "ri:html5-fill"
+    },
+    {
+        "name": "CSS3",
+        "icon": "simple-icons:css"
+    },
+    {
+        "name": "Javascript",
+        "icon": "fa-brands:js"
+    },
+    {
+        "name": "Git / Github",
+        "icon": "mdi:git"
+    },
+    {
+        "name": "Sass",
+        "icon": "mdi:sass"
+    },
+    {
+        "name": "mySQL",
+        "icon": "mdi:database-outline"
+    },
+    {
+        "name": "Figma",
+        "icon": "ri:figma-fill"
+    },
+    {
+        "name": "TailwindCSS",
+        "icon": "ri:tailwind-css-fill"
+    },
+    {
+        "name": "Wordpress",
+        "icon": "ri:wordpress-fill"
+    }
+]

@@ -1,0 +1,103 @@
+@import "tailwindcss";
+
+@font-face {
+    font-family: 'Staatliches';
+    src: url('/fonts/staatliches/Staatliches-Regular.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Satoshi';
+    src: url('/fonts/satoshi/Satoshi-Variable.ttf') format('truetype');
+    font-weight: 300 400 500 700 900;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Geist Mono';
+    src: url('/fonts/geist-mono/GeistMono-VariableFont_wght.ttf') format('truetype');
+    font-weight: 100 200 300 400 500 600 700 800 900;
+    font-style: normal;
+}
+
+:root {
+    --bg-color: #FFFCF2;
+    --text-color: #252422;
+    --separator-color: repeating-linear-gradient(to right, #403D39 0px, #403D39 40px, transparent 0px, transparent 60px);
+    --title-color: #252422;
+}
+
+.dark {
+    --bg-color: #252422;
+    --text-color: #FFFCF2;
+    --base-color: #FFFFFF;
+    --separator-color: repeating-linear-gradient(to right, #FFFCF2 0px, #FFFCF2 40px, transparent 0px, transparent 60px);
+    --title-color: #EB5E28;
+}
+
+body{
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+h2{
+    color: var(--text-color);
+    transition: color 0.3s ease;
+}
+
+/* header{
+    background-color: var(--bg-color);
+    transition: background-color 0.3s ease-in-out;
+} */
+
+.name-title {
+    color: var(--title-color);
+    transition: color 0.3s ease;
+}
+
+.robot-icon {
+    color: var(--text-color);
+    transition: color 0.3s ease;
+}
+
+.separator{
+    background: var(--separator-color);
+    transition: background-color 0.3s ease-in-out;
+}
+
+.bg-creme { background-color: #FFFCF2;}
+
+.font-staatliches { font-family: 'Staatliches';}
+
+.stroke-orange-1 { border: 5px solid #EB5E28;}
+.stroke-orange-2 { border: 6px solid #EB5E28;}
+.stroke-orange-3 { border: 7px solid #EB5E28;}
+.stroke-orange-4 { border: 9px solid #EB5E28;}
+.stroke-orange-5 { border: 11px solid #EB5E28;}
+.stroke-orange-6 { border: 13px solid #EB5E28;}
+
+.color-soft-orange { color: #EB5E28;}
+.color-soft-black { color: #252422;}
+.color-soft-grey { color: #CCC5B9;}
+
+.bg-soft-orange { background-color: #EB5E28;}
+.bg-soft-black { background-color: #252422;}
+.bg-soft-grey { background-color: #CCC5B9;}
+
+.font-satoshi-light{ font-family: 'Satoshi'; font-weight: 300;}
+.font-satoshi-regular{ font-family: 'Satoshi'; font-weight: 400;}
+.font-satoshi-medium{ font-family: 'Satoshi'; font-weight: 500;}
+.font-satoshi-bold{ font-family: 'Satoshi'; font-weight: 700;}
+.font-satoshi-black{ font-family: 'Satoshi'; font-weight: 900;}
+
+.font-geist-thin{ font-family: 'Geist Mono'; font-weight: 100;}
+.font-geist-extralight{ font-family: 'Geist Mono'; font-weight: 200;}
+.font-geist-light{ font-family: 'Geist Mono'; font-weight: 300;}
+.font-geist-regular{ font-family: 'Geist Mono'; font-weight: 400;}
+.font-geist-medium{ font-family: 'Geist Mono'; font-weight: 500;}
+.font-geist-semibold{ font-family: 'Geist Mono'; font-weight: 600;}
+.font-geist-bold{ font-family: 'Geist Mono'; font-weight: 700;}
+.font-geist-extrabold{ font-family: 'Geist Mono'; font-weight: 800;}
+.font-geist-black{ font-family: 'Geist Mono'; font-weight: 900;}

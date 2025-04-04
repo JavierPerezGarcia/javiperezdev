@@ -1,0 +1,17 @@
+---
+import { languages } from "../../i18n/ui";
+import { getLangFromUrl } from "../../i18n/utils";
+
+const currentLang = getLangFromUrl(Astro.url);
+const targetLang = currentLang === 'es' ? 'en' : 'es';
+
+console.log(currentLang);
+console.log(targetLang);
+---
+
+<button class="lang-button text-black font-staatliches" onclick={`window.location.href = '/${targetLang}/' + window.location.pathname.split('/').slice(2).join('/')`} aria-label={`Cambiar idioma (${currentLang})`}>
+    {currentLang == 'es' && ( <span class="change-lang text-center cursor-pointer flex items-center text-2xl">{currentLang.toUpperCase() + "P"}</span> )
+    }
+    {currentLang == 'en' && ( <span class="change-lang text-center cursor-pointer flex items-center text-2xl">{currentLang.toUpperCase() + "G"}</span> )
+    }
+</button>
